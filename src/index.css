@@ -133,8 +133,7 @@
 @layer components {
   /* Glassmorphism effects */
   .glass-card {
-    @apply backdrop-blur-md bg-glass-primary/30 border border-white/20 rounded-xl;
-    box-shadow: 0 8px 32px hsl(240 10% 3% / 0.5);
+    @apply backdrop-blur-md bg-glass-primary/30 border border-white/20 rounded-xl shadow-glass;
   }
   
   .glass-strong {

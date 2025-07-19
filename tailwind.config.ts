@@ -75,6 +75,11 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			boxShadow: {
+				'neon': '0 0 20px hsl(210 100% 56% / 0.5)',
+				'glow': '0 0 40px hsl(270 100% 70% / 0.3)',
+				'glass': '0 8px 32px hsl(240 10% 3% / 0.5)'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },

@@ -3,7 +3,7 @@ import { Building2, Code2, Shield, Database, Globe } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: "IIDT Blackbucks",
+      company: "Blue Cloud Softech Solutions Ltd.",
       role: "Backend Development Intern",
       type: "On-site",
       duration: "Recent",
@@ -18,7 +18,7 @@ const ExperienceSection = () => {
       ]
     },
     {
-      company: "IIDT Blackbucks",
+      company: "Blue Cloud Softech Solutions Ltd.",
       role: "Full Stack Developer",
       type: "Remote",
       duration: "Recent",

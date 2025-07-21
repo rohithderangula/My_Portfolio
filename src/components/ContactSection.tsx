@@ -24,13 +24,23 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://formspree.io/f/xblkdvzv', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        alert('Error sending message.');
+      }
+    } catch (error) {
+      alert('Error: ' + (error as Error).message);
+    } finally {
       setIsSubmitting(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      // Show success message
-    }, 2000);
+    }
   };
 
   const contactInfo = [

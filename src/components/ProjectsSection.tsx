@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     {
       title: "Abhaya - People Safety App",
       description: "Revolutionary safety application featuring SOS emergency alerts, real-time location tracking, voice activation, and advanced drone surveillance for comprehensive personal security.",
-      image: "/api/placeholder/600/400",
+      image: "/assets/abhaya.png", // Updated path
       technologies: ["PHP", "HTML", "css", "JavaScript", "MySQL", "Bootstrap", "GPS API"],
       features: [
         "One-touch SOS emergency alert system",
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
     {
       title: "Karmi Mitra - Job Assistance Platform",
       description: "Comprehensive job assistance platform connecting job seekers with opportunities, featuring advanced matching algorithms, skill assessment, and career guidance tools.",
-      image: "/api/placeholder/600/400", 
+      image: "/assets/karmi_mitra.png", // Updated path 
       technologies: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
       features: [
         "Intelligent job matching algorithm",

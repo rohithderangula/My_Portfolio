@@ -37,8 +37,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "derangularohith@gmail.com",
-      href: "mailto:derangularohith@gmail.com",
+      value: "Rohithderangula11@gmail.com",
+      href: "mailto:rohithderangula11@gmail.com",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
@@ -62,21 +62,21 @@ const ContactSection = () => {
       icon: Github,
       label: "GitHub",
       handle: "@rohith-derangula",
-      href: "#",
+      href: "https://github.com/rohithderangula",
       gradient: "from-gray-700 to-gray-900"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       handle: "Derangula Rohith",
-      href: "#",
+      href: "https://www.linkedin.com/in/rohith-derangula-729708285/",
       gradient: "from-blue-600 to-blue-800"
     },
     {
       icon: Mail,
       label: "Email",
-      handle: "derangularohith@gmail.com",
-      href: "mailto:derangularohith@gmail.com",
+      handle: "Rohithderangula11@gmail.com",
+      href: "mailto:rohithderangula11@gmail.com",
       gradient: "from-red-500 to-orange-500"
     }
   ];
@@ -259,7 +259,7 @@ const ContactSection = () => {
                 className="glass-card hover-glow border-primary/50 hover:border-primary group"
                 asChild
               >
-                <a href="mailto:derangularohith@gmail.com">
+                <a href="mailto:rohithderangula11@gmail.com">
                   <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
                   Quick Email
                 </a>

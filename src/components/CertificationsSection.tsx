@@ -6,11 +6,11 @@ const CertificationsSection = () => {
     {
       title: "Programming in Java",
       provider: "NPTEL",
-      date: "2023",
+      date: "2024",
       description: "Comprehensive Java programming course covering OOP concepts, data structures, and enterprise development.",
       skills: ["Java", "OOP", "Data Structures", "Enterprise Development"],
-      credentialId: "NPTEL23CS**",
-      verifyLink: "#",
+      credentialId: "NPTEL24CS105S666200130",
+      verifyLink: "https://drive.google.com/file/d/1onIHnNZfqCNveCRHggpuv9WdREkJvamu/view?usp=sharing",
       badgeColor: "from-blue-500 to-indigo-600",
       glowColor: "shadow-blue-500/50"
     },

@@ -7,7 +7,7 @@ const ProjectsSection = () => {
       title: "Abhaya - People Safety App",
       description: "Revolutionary safety application featuring SOS emergency alerts, real-time location tracking, voice activation, and advanced drone surveillance for comprehensive personal security.",
       image: "/api/placeholder/600/400",
-      technologies: ["React Native", "Node.js", "MongoDB", "GPS API", "Voice Recognition", "Drone Integration"],
+      technologies: ["PHP", "HTML", "css", "JavaScript", "MySQL", "Bootstrap", "GPS API"],
       features: [
         "One-touch SOS emergency alert system",
         "Real-time GPS location tracking",
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       gradient: "from-red-500 to-orange-500",
       glowColor: "shadow-red-500/50",
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/rohithderangula/Be_Abhaya",
       status: "Featured Project"
     },
     {
@@ -35,12 +35,12 @@ const ProjectsSection = () => {
         "Career guidance and mentorship",
         "Employer-candidate communication hub"
       ],
-      awards: ["🥇 Tech Fest Winner - VKR, VNB, AGK"],
+      awards: ["🥇 Tech Fest Winner - VKR, VNB & AGK college of Engineering"],
       icon: Users,
       gradient: "from-blue-500 to-purple-500",
       glowColor: "shadow-blue-500/50",
       demoLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/rohithderangula/Karmi_Mitra",
       status: "Award Winner"
     }
   ];
@@ -165,19 +165,19 @@ const ProjectsSection = () => {
 
                   {/* Action Buttons */}
                   <div className="flex space-x-4 pt-4 border-t border-white/10">
-                    <Button 
-                      className={`flex-1 bg-gradient-to-r ${project.gradient} hover:opacity-90 transition-opacity`}
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      View Demo
-                    </Button>
-                    <Button 
-                      variant="outline"
-                      className="flex-1 border-white/20 hover:border-white/40"
-                    >
-                      <Github className="h-4 w-4 mr-2" />
-                      Source Code
-                    </Button>
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button className={`w-full bg-gradient-to-r ${project.gradient} hover:opacity-90 transition-opacity`}>
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        View Demo
+                      </Button>
+                    </a>
+                    
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="outline" className="w-full border-white/20 hover:border-white/40">
+                        <Github className="h-4 w-4 mr-2" />
+                        Source Code
+                      </Button>
+                    </a>
                   </div>
                 </div>
 
@@ -189,17 +189,23 @@ const ProjectsSection = () => {
         </div>
 
         {/* View All Projects Button */}
-        <div className="text-center mt-16">
-          <Button 
-            size="lg"
-            variant="outline"
-            className="glass-card hover-glow px-8 py-6 text-lg border-primary/50 hover:border-primary group"
-          >
-            <Github className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-            View All Projects on GitHub
-            <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
-          </Button>
-        </div>
+          <div className="text-center mt-16">
+            <a
+              href="https://github.com/rohithderangula?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button 
+                size="lg"
+                variant="outline"
+                className="glass-card hover-glow px-8 py-6 text-lg border-primary/50 hover:border-primary group"
+              >
+                <Github className="mr-2 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+                View All Projects on GitHub
+                <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+              </Button>
+            </a>
+          </div>
 
         {/* Background Elements */}
         <div className="absolute top-20 left-10 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl animate-float"></div>

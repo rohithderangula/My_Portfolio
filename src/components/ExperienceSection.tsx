@@ -3,7 +3,7 @@ import { Building2, Code2, Shield, Database, Globe } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: "Blue Cloud Softech Solutions Ltd.",
+      company: "Blue Cloud Softech Solutions Ltd",
       role: "Backend Development Intern",
       type: "On-site",
       duration: "Recent",
@@ -18,7 +18,7 @@ const ExperienceSection = () => {
       ]
     },
     {
-      company: "Blue Cloud Softech Solutions Ltd.",
+      company: "IIDT Blackbucks",
       role: "Full Stack Developer",
       type: "Remote",
       duration: "Recent",
@@ -58,10 +58,10 @@ const ExperienceSection = () => {
               className={`relative mb-16 ${index % 2 === 0 ? 'lg:pr-8 lg:text-right' : 'lg:pl-8 lg:ml-auto lg:text-left'} lg:w-1/2`}
               style={{ animationDelay: `${index * 0.3}s` }}
             >
-              {/* Timeline Dot */}
+              {/* Timeline Dot
               <div className={`absolute top-8 ${index % 2 === 0 ? 'lg:right-[-2rem]' : 'lg:left-[-2rem]'} left-1/2 lg:left-auto transform -translate-x-1/2 lg:transform-none w-8 h-8 rounded-full bg-gradient-to-r ${exp.gradient} flex items-center justify-center group-hover:scale-125 transition-transform duration-300 z-10`}>
                 <exp.icon className="h-4 w-4 text-white" />
-              </div>
+              </div> */}
 
               {/* Experience Card */}
               <div className="glass-card p-8 hover-lift group relative overflow-hidden">
@@ -85,12 +85,12 @@ const ExperienceSection = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-left text-muted-foreground mb-6 leading-relaxed">
                     {exp.description}
                   </p>
 
                   {/* Achievements */}
-                  <div className="mb-6">
+                  <div className="mb-6 text-left">
                     <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Key Achievements</h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, achIndex) => (
@@ -102,8 +102,9 @@ const ExperienceSection = () => {
                     </ul>
                   </div>
 
+
                   {/* Technologies */}
-                  <div>
+                  <div className="text-left">
                     <h4 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech, techIndex) => (
@@ -125,9 +126,9 @@ const ExperienceSection = () => {
         {/* Stats Section */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { icon: Code2, label: "Projects Completed", value: "10+", color: "text-neon-blue" },
-            { icon: Database, label: "Backend Systems", value: "5+", color: "text-neon-violet" },
-            { icon: Globe, label: "Web Applications", value: "8+", color: "text-neon-cyan" }
+            { icon: Code2, label: "Projects", value: "3", color: "text-neon-blue" },
+            { icon: Database, label: "Backend Systems", value: "3", color: "text-neon-violet" },
+            { icon: Globe, label: "Web Applications", value: "3", color: "text-neon-cyan" }
           ].map((stat, index) => (
             <div key={index} className="glass-card p-6 text-center hover-lift group">
               <div className={`inline-flex p-4 rounded-full bg-white/5 mb-4 group-hover:scale-110 transition-transform duration-300`}>

@@ -160,10 +160,10 @@ const SkillsSection = () => {
         {/* Overall Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { label: "Languages Mastered", value: "4+", icon: Code },
-            { label: "Frameworks Used", value: "6+", icon: Globe },
-            { label: "Years Learning", value: "4+", icon: Brain },
-            { label: "Projects Built", value: "10+", icon: Wrench }
+            { label: "Languages Mastered", value: "2+", icon: Code },
+            { label: "Frameworks Used", value: "3+", icon: Globe },
+            { label: "Years Learning", value: "3+", icon: Brain },
+            { label: "Projects Built", value: "2", icon: Wrench }
           ].map((stat, index) => (
             <div key={index} className="text-center glass-card p-6 hover-lift group">
               <div className="inline-flex p-4 rounded-full bg-primary/20 mb-4 group-hover:scale-110 transition-transform duration-300">

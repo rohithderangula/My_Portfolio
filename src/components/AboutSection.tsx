@@ -5,16 +5,16 @@ const AboutSection = () => {
     {
       institution: "Krishna University",
       degree: "B.Tech Computer Science & Engineering",
-      duration: "2021 - 2025",
-      grade: "85% CGPA",
+      duration: "2022 - 2026",
+      grade: "Percentage: 85%",
       icon: GraduationCap,
       color: "from-neon-blue to-neon-cyan"
     },
     {
       institution: "Sri Chaitanya Junior Kalasala",
       degree: "Intermediate - MPC",
-      duration: "2019 - 2021", 
-      grade: "87%",
+      duration: "2020 - 2022", 
+      grade: "Percentage: 87%",
       icon: Award,
       color: "from-neon-violet to-neon-pink"
     }
@@ -44,13 +44,17 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div className="glass-card p-8 hover-lift group">
               <div className="flex items-center space-x-6 mb-6">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-neon-blue to-neon-violet flex items-center justify-center text-2xl font-bold text-white group-hover:scale-110 transition-transform duration-300">
-                  DR
+                <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-neon-violet/30 group-hover:scale-110 transition-transform duration-300">
+                  <img 
+                    src="/profile.png" 
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">Derangula Rohith</h3>
                   <p className="text-primary font-semibold">Full Stack Developer</p>
-                  <p className="text-muted-foreground">Cybersecurity Enthusiast</p>
+                  <p className="text-muted-foreground">Backend specialist</p>
                 </div>
               </div>
               
@@ -61,7 +65,7 @@ const AboutSection = () => {
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-white/10">
                   <span className="text-muted-foreground">Focus Area</span>
-                  <span className="text-foreground font-medium">Cybersecurity</span>
+                  <span className="text-foreground font-medium">Web Development</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-white/10">
                   <span className="text-muted-foreground">Experience</span>
@@ -112,7 +116,7 @@ const AboutSection = () => {
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   {/* Timeline Dot */}
-                  <div className="absolute -left-12 top-6 w-6 h-6 rounded-full bg-gradient-to-r from-neon-blue to-neon-violet group-hover:scale-125 transition-transform duration-300"></div>
+                  <div className="absolute -left-11 top-6 w-6 h-6 rounded-full bg-gradient-to-r from-neon-blue to-neon-violet group-hover:scale-125 transition-transform duration-300"></div>
                   
                   {/* Content Card */}
                   <div className="glass-card p-6 hover-lift">

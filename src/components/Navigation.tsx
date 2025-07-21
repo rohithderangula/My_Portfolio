@@ -47,7 +47,7 @@ const Navigation = () => {
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-blue to-neon-violet flex items-center justify-center text-sm font-bold text-white">
                 DR
               </div>
-              <span className="text-xl font-bold gradient-text">Derangula Rohith</span>
+              <span className="text-xl font-bold gradient-text">Portfolio</span>
             </div>
 
             {/* Desktop Navigation */}
@@ -68,8 +68,8 @@ const Navigation = () => {
             <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 {[
-                  { icon: Github, href: '#', label: 'GitHub' },
-                  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+                  { icon: Github, href: 'https://github.com/rohithderangula', label: 'GitHub' },
+                  { icon: Linkedin, href: 'https://www.linkedin.com/in/rohith-derangula-729708285/', label: 'LinkedIn' },
                   { icon: Mail, href: 'mailto:derangularohith@gmail.com', label: 'Email' }
                 ].map((social) => (
                   <a
@@ -143,8 +143,8 @@ const Navigation = () => {
                 Connect
               </div>
               {[
-                { icon: Github, href: '#', label: 'GitHub Profile' },
-                { icon: Linkedin, href: '#', label: 'LinkedIn Profile' },
+                { icon: Github, href: 'https://github.com/rohithderangula', label: 'GitHub Profile' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/rohith-derangula-729708285/', label: 'LinkedIn Profile' },
                 { icon: Mail, href: 'mailto:derangularohith@gmail.com', label: 'Send Email' }
               ].map((social) => (
                 <a

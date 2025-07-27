@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    host: "::",
+    port: 4173,
+  },
   plugins: [
     react(),
     mode === 'development' && componentTagger(),
@@ -17,5 +21,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/My_Portfolio/' // Add this for GitHub Pages
+  base: mode === 'production' ? '/My_Portfolio/' : '/' // Dynamic base
 }));

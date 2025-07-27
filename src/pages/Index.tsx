@@ -42,7 +42,6 @@ const Index = () => {
         </section>
       </main>
       
-      {/* Footer */}
       <footer className="glass-card border-t border-white/20 py-8 mt-20">
         <div className="container mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">

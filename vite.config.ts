@@ -21,5 +21,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === 'production' ? '/My_Portfolio/' : '/' // Dynamic base
+  base: mode === 'production' ? '/My_Portfolio/' : '/',
+  publicDir: 'public' // Ensure public/ contents are copied to dist/
 }));

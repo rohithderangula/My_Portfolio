@@ -67,7 +67,7 @@ const HeroSection = () => {
               <div className="w-40 h-40 mx-auto rounded-full glass-card p-1 shadow-[0_0_20px_hsl(var(--neon-violet)/0.4)]">
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-[hsl(var(--neon-violet)/0.3)]">
                   <img 
-                    src="/assets/profile.png" 
+                    src={`${import.meta.env.BASE_URL}assets/profile.png`} 
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />

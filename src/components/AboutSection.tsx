@@ -46,7 +46,7 @@ const AboutSection = () => {
               <div className="flex items-center space-x-6 mb-6">
                 <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-neon-violet/30 group-hover:scale-110 transition-transform duration-300">
                   <img 
-                    src="/assets/profile.png" 
+                    src={`${import.meta.env.BASE_URL}assets/profile.png`} 
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />

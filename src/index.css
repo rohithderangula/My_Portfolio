@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Futuristic Portfolio Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    /* Futuristic color palette */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --background-secondary: 240 8% 8%;
+    
+    /* Neon colors */
+    --neon-blue: 210 100% 56%;
+    --neon-cyan: 180 100% 70%;
+    --neon-violet: 270 100% 70%;
+    --neon-pink: 320 100% 70%;
+    
+    /* Glassmorphism backgrounds */
+    --glass-primary: 240 10% 15%;
+    --glass-secondary: 240 8% 12%;
+    --glass-border: 0 0% 100%;
+    
+    /* Enhanced gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 56%), hsl(270 100% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(180 100% 70%), hsl(320 100% 70%));
+    --gradient-glow: linear-gradient(135deg, hsl(210 100% 56% / 0.3), hsl(270 100% 70% / 0.3));
+    
+    /* Shadows and glows */
+    --shadow-neon: 0 0 20px hsl(210 100% 56% / 0.5);
+    --shadow-glow: 0 0 40px hsl(270 100% 70% / 0.3);
+    --shadow-glass: 0 8px 32px hsl(240 10% 3% / 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --card: 240 10% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 210 100% 56%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 10% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 8% 12%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 270 100% 70%;
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Glassmorphism effects */
+  .glass-card {
+    @apply backdrop-blur-md bg-glass-primary/30 border border-white/20 rounded-xl shadow-glass;
+  }
+  
+  .glass-strong {
+    @apply backdrop-blur-lg bg-glass-primary/50 border border-white/30;
+  }
+  
+  /* Neon glow effects */
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .violet-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Interactive elements */
+  .hover-lift {
+    @apply transition-all duration-300 hover:scale-105 hover:-translate-y-2;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-neon;
+  }
+  
+  /* Text effects */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .typing-cursor::after {
+    content: '|';
+    @apply animate-pulse text-primary;
+  }
+  
+  /* Floating animation */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Particle background */
+  .particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .particle {
+    position: absolute;
+    background: hsl(var(--primary));
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float-particle 6s infinite ease-in-out;
+  }
+  
+  @keyframes float-particle {
+    0%, 100% { 
+      transform: translateY(100vh) scale(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(-100px) scale(1);
+      opacity: 0;
+    }
+  }
+  
+  /* Skill radar chart */
+  .skill-capsule {
+    @apply glass-card px-4 py-2 hover-lift cursor-pointer relative overflow-hidden;
+  }
+  
+  .skill-capsule::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-primary);
+    transition: left 0.3s ease;
+    opacity: 0.1;
+  }
+  
+  .skill-capsule:hover::before {
+    left: 0;
+  }
+}

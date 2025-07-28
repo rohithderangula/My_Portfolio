@@ -34,8 +34,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Passionate about technology and innovation, I'm dedicated to creating 
-            impactful solutions that bridge the gap between complex problems and elegant code.
+            I craft innovative solutions as a Full Stack Developer, specializing in Python and Django. I built <strong>Abhaya</strong>, a safety app, and <strong>Karmi Mitra</strong>, a job platform. Achievements include an 85% in B.Tech and awards in coding competitions.
           </p>
         </div>
 

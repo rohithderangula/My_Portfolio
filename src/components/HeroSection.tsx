@@ -9,9 +9,9 @@ const HeroSection = () => {
   const roles = [
     'Full Stack Developer',
     'Backend Specialist', 
-    'Cybersecurity Intern',
-    'Tech Innovator',
-    'Problem Solver'
+    'Web Development Intern',
+    'Tech Innovator'
+    
   ];
 
   useEffect(() => {
@@ -91,8 +91,8 @@ const HeroSection = () => {
           </div>
 
           <p className="text-lg text-muted-foreground mb-7 max-w-2xl mx-auto leading-relaxed">
-            Award-winning Computer Science & Engineering student passionate about backend development, 
-            cybersecurity, and creating innovative solutions that make a difference in the digital world.
+            Award-winning Computer Science & Engineering student passionate about backend development 
+            and creating innovative solutions that make a difference in the digital world.
           </p>
 
           {/* CTA Buttons */}

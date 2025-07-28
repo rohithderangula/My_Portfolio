@@ -62,6 +62,11 @@ const CertificationsSection = () => {
     }
   ];
 
+  const handleVerifyClick = (link: string) => {
+    console.log(`Opening verify link: ${link}`);
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -142,12 +147,10 @@ const CertificationsSection = () => {
                       <Button 
                         size="sm"
                         className={`bg-gradient-to-r ${cert.badgeColor} hover:opacity-90 transition-opacity text-white`}
-                        asChild
+                        onClick={() => handleVerifyClick(cert.verifyLink)}
                       >
-                        <a href={cert.verifyLink} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="h-4 w-4 mr-2" />
-                          Verify
-                        </a>
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Verify
                       </Button>
                     </div>
                   </div>

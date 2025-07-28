@@ -21,7 +21,7 @@ const CertificationsSection = () => {
       description: "Advanced Java programming certification focusing on modern development practices and frameworks.",
       skills: ["Advanced Java", "Spring Framework", "Maven", "Testing"],
       credentialId: "edX-JAVA-2023",
-      verifyLink: "#",
+      verifyLink: "https://courses.edx.org/certificates/43be435eb88b459d878720514d6fb87d?_gl=1*1dy3ywv*_gcl_au*NjQ1OTE1MzE5LjE3NTM2ODU2MzE.*_ga*MTAxODYyMzI1OS4xNzMwMzAzOTAw*_ga_D3KS4KMDT0*czE3NTM2ODU2MzEkbzEwJGcxJHQxNzUzNjg1OTI5JGo2JGwwJGgw",
       badgeColor: "from-green-500 to-teal-600",
       glowColor: "shadow-green-500/50"
     }
@@ -142,9 +142,12 @@ const CertificationsSection = () => {
                       <Button 
                         size="sm"
                         className={`bg-gradient-to-r ${cert.badgeColor} hover:opacity-90 transition-opacity text-white`}
+                        asChild
                       >
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Verify
+                        <a href={cert.verifyLink} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Verify
+                        </a>
                       </Button>
                     </div>
                   </div>

@@ -51,7 +51,7 @@ const Index = () => {
             <span className="text-lg font-bold gradient-text">Derangula Rohith</span>
           </div>
           <p className="text-muted-foreground mb-4">
-            Full Stack Developer • Cybersecurity Enthusiast • Tech Innovator
+            Full Stack Developer • Backend Specialist • Web Development Intern
           </p>
           <p className="text-sm text-muted-foreground">
             © 2024 Derangula Rohith. Crafted with passion and innovation.
